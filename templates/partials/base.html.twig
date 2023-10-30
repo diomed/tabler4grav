@@ -1,0 +1,46 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getLanguage ?: theme_config.default_lang }}">
+  <head>
+    {% block head %}
+      {% include 'partials/head.html.twig' %}
+    {% endblock %}
+  </head>
+  <body class="{{ page.header.body_classes }}">
+<div class="page">
+    {% block header %}
+      {% include 'partials/header.html.twig' %}
+    {% endblock %}
+<div class="pagewrapper">
+
+          <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                {# <h2 class="page-title">Empty page</h2> #}
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Page body -->
+        <div class="page-body">
+          <div class="container-sm">
+            <div class="col-lg-10 col-xl-9">
+          <div class="card card-lg">
+            <div class="card-body markdown">
+                    {% block content %}{% endblock %}
+                    </div>
+                  </div>
+          </div>
+        </div>
+        </div>
+    {% block footer %}
+      {% include 'partials/footer.html.twig' %}
+    {% endblock %}
+
+    {% block bottom %}
+      {{ assets.js('bottom')|raw }}
+    {% endblock %}
+</div>
+  </body>
+</html>

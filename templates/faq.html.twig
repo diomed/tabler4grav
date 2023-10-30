@@ -1,0 +1,28 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  {% if page.header.featured_image is defined %}
+    {% set post_image = page.media.images[page.header.featured_image] %}
+  {% else %}
+    {% set post_image = page.media.images | first %}
+  {% endif %}
+
+  <h1>{{ page.title }}</h1>
+
+            {% for item in page.header.items %}
+<div class="accordion m-4">
+  <details class="accordion-item">
+    <summary class="accordion-button">
+      <div class="accordion-header">
+        <h3>{{item.title}}</h3> 
+      </div>
+    </summary>
+
+    <div class="accordion-body">
+      <p>{{item.content}}</p>
+    </div>
+  </details>
+</div>
+
+        {% endfor %}       
+{% endblock %}

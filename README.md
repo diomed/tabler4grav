@@ -25,7 +25,7 @@ Log in to admin panel go to `Themes > Add` search for Tabler and click `Install`
 ``` sh
 $ cd path/to/grav/user/themes
 $ git clone https://github.com/diomed/tabler.git
-$ cd gravnd-zero
+$ cd tabler
 $ yarn
 ```
 > Using this method you will have to manually copy files from `user/themes/tabler/_demo/pages` to `user/pages`

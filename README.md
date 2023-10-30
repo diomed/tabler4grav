@@ -17,8 +17,8 @@ $ yarn
 
 #### [Grav Admin Plugin](https://github.com/getgrav/grav-plugin-admin)
 
-Log in to admin panel go to `Themes > Add` search for Gravnd Zero and click `Install`. After that, `Activate` the theme.
-> Using this method you will have to manually copy files from `user/themes/gravnd-zero/_demo/pages` to `user/pages`
+Log in to admin panel go to `Themes > Add` search for Tabler and click `Install`. After that, `Activate` the theme.
+> Using this method you will have to manually copy files from `user/themes/tabler/_demo/pages` to `user/pages`
 
 #### Manual
 

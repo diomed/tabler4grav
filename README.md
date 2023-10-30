@@ -1,13 +1,8 @@
-<h1 align='center'>Gravnd Zero</h1>
+<h1 align='center'>TABLER</h1>
 
 <p align='center'>
   Minimal theme for <a href='http://github.com/getgrav/grav'>Grav CMS</a>. No dependencies, improved directory structure, optimized build process and freedom to create.
 </p>
-
-### Features
-
-- [Laravel Mix](https://laravel.com/docs/5.5/mix) Webpack wrapper allowing the asset pipline flow smoothly
-- [Browsersync](https://www.browsersync.io/) Syncs your devices and refreshes the browsers everytime you make a change
 
 ### Installation
 
@@ -15,8 +10,8 @@
 
 ``` sh
 $ cd path/to/grav
-$ bin/gpm install gravnd-zero
-$ cd /user/themes/gravnd-zero
+$ bin/gpm install tabler
+$ cd /user/themes/tabler
 $ yarn
 ```
 
@@ -29,11 +24,11 @@ Log in to admin panel go to `Themes > Add` search for Gravnd Zero and click `Ins
 
 ``` sh
 $ cd path/to/grav/user/themes
-$ git clone https://github.com/fistmenaruto/gravnd-zero.git
+$ git clone https://github.com/diomed/tabler.git
 $ cd gravnd-zero
 $ yarn
 ```
-> Using this method you will have to manually copy files from `user/themes/gravnd-zero/_demo/pages` to `user/pages`
+> Using this method you will have to manually copy files from `user/themes/tabler/_demo/pages` to `user/pages`
 
 ### Usage
 
@@ -58,9 +53,3 @@ $ yarn
 ### [Contribute](CONTRIBUTING.md)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-<h3 align='center'>Thank you</h3>
-
-<p align='center'>
-  To <a href='https://github.com/robbinfellow'>Robbin Johansson</a> and his <a href='https://github.com/robbinfellow/haywire-grav'>Haywire</a> Grav theme, on which this project is based on.
-</p>
